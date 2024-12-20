@@ -1,8 +1,3 @@
-/* body {
-  background: black;
-  color: white;
-} */
-
 hr {
   margin-top: 30px;
   margin-bottom: 20px;
@@ -47,4 +42,18 @@ hr {
   transform: translateY(-50%);
   font-size: 2.5em;
   opacity: 0.3;
+}
+
+.page-content {
+  background: black;
+  color: white;
+}
+
+.site-title,
+.site-title:visited {
+  color: #9f9f9f;
+}
+
+.site-header {
+  background: #232323;
 }
