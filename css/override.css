@@ -3,6 +3,20 @@ hr {
   margin-bottom: 20px;
 }
 
+a {
+  color: white;
+}
+
+a:hover {
+  color: white;
+  opacity: 0.5;
+}
+
+a:visited {
+  color: white;
+  opacity: 0.8;
+}
+
 /* Post navigation links */
 .post_navi {
   display: flex;
@@ -67,7 +81,7 @@ hr {
 pre,
 code {
   border: none;
-  border-radius: 15px;
+  border-radius: 8px;
   background-color: transparent;
   font-size: 12px;
 }
@@ -75,4 +89,16 @@ code {
 .site-footer {
   background-color: #232323;
   border-top: 1px solid #3f3f3f;
+}
+
+.post_navi-label {
+  opacity: 0.2;
+}
+
+.post_navi .post_navi-arrow {
+  opacity: 0.1;
+}
+
+.post_navi-item span {
+  opacity: 0.5;
 }
