@@ -57,3 +57,10 @@ hr {
 .site-header {
   background: #232323;
 }
+
+pre,
+code {
+  border: none;
+  border-radius: 15px;
+  background-color: transparent;
+}
