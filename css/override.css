@@ -45,7 +45,7 @@ hr {
 }
 
 .page-content {
-  background: black;
+  background-color: black;
   color: white;
 }
 
@@ -55,7 +55,13 @@ hr {
 }
 
 .site-header {
-  background: #232323;
+  background-color: #232323;
+  border-top: 5px solid #232323;
+  border-bottom: 1px solid #3f3f3f;
+}
+
+.site-nav .page-link {
+  color: #9f9f9f;
 }
 
 pre,
@@ -63,4 +69,10 @@ code {
   border: none;
   border-radius: 15px;
   background-color: transparent;
+  font-size: 12px;
+}
+
+.site-footer {
+  background-color: #232323;
+  border-top: 1px solid #3f3f3f;
 }
