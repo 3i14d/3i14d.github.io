@@ -106,3 +106,7 @@ code {
 .post_navi-item span {
   opacity: 0.5;
 }
+
+.post-list-heading {
+  display: none;
+}
