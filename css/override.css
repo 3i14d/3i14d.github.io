@@ -73,9 +73,9 @@ a:visited {
 }
 
 .site-header {
-  background-color: #232323;
-  border-top: 5px solid #232323;
-  border-bottom: 1px solid #3f3f3f;
+  background-color: black;
+  border-top: 5px solid black;
+  border-bottom: 1px solid #101010;
 }
 
 .site-nav .page-link {
@@ -91,8 +91,8 @@ code {
 }
 
 .site-footer {
-  background-color: #232323;
-  border-top: 1px solid #3f3f3f;
+  background-color: #101010;
+  border-top: 1px solid #272727;
 }
 
 .post_navi-label {
@@ -107,6 +107,7 @@ code {
   opacity: 0.5;
 }
 
-.post-list-heading {
+.post-list-heading,
+.rss-subscribe {
   display: none;
 }
