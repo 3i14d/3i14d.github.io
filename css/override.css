@@ -3,6 +3,10 @@ hr {
   margin-bottom: 20px;
 }
 
+pre {
+  padding: 0;
+}
+
 a {
   color: white;
 }
