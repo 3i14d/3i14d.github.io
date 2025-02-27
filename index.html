@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3i14d</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css"
+    />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/contrib/auto-render.min.js"
+      onload="renderMathInElement(document.body);"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="bio">
+        <img src="./mick.png" onclick="window.location.href='./mick.png'" />
+        <div class="bio-text">
+          <h1>3i14d</h1>
+          <h2>Informotion + Bitshake + ScraperWiz</h2>
+          <h3>
+            <a href="mailto:milad@scraperwiz.com">milad@scraperwiz.com</a>
+          </h3>
+        </div>
+      </div>
+
+      <div class="post">
+        <p>
+          Eine einfache Lotterie über dem Intervall \(X = [\underline{x},
+          \bar{x}]\) wird durch eine kumulative Verteilungsfunktion \(F : X
+          \rightarrow [0, 1]\) definiert, wobei \(F(\hat{x}) = \Pr\{x \le
+          \hat{x}\}\) die Wahrscheinlichkeit angibt, dass das Ergebnis kleiner
+          oder gleich \(\hat{x}\) ist.
+        </p>
+      </div>
+
+      <div class="post">
+        <p>
+          Eine einfache Lotterie über die Ergebnisse \(X = \{x_1, x_2, \dots,
+          x_n\}\) wird als eine Wahrscheinlichkeitsverteilung \(p = (p(x_1),
+          p(x_2), \dots, p(x_n))\) definiert, wobei \(p(x_k) \ge 0\) die
+          Wahrscheinlichkeit ist, dass \(x_k\) eintritt, und \(\sum_{k=1}^{n}
+          p(x_k) = 1\) gilt.
+        </p>
+        <p>
+          Genauer gesagt hängt die Lotterie, die die Natur wählt, von der vom
+          Spieler getroffenen Aktion ab. Daher wird für eine gegebene Aktion \(a
+          \in A\) die bedingte Wahrscheinlichkeit, dass \(x_k \in X\) eintritt,
+          durch \(p(x_k \mid a)\) dargestellt, wobei \(p(x_k \mid a) \ge 0\)
+          gilt und \(\sum_{k=1}^{n} p(x_k \mid a) = 1\) für alle \(a \in A\)
+          erfüllt ist.
+        </p>
+      </div>
+
+      <div class="post">
+        <p>
+          Die Natur wählt eine Wahrscheinlichkeitsverteilung über die Ergebnisse
+          und die Wahrscheinlichkeitsverteilung hängt von der Aktion ab, die ein
+          entscheidungsbestimmender Spieler wählt.
+        </p>
+      </div>
+
+      <div class="post">
+        <p>Риск, природа и случайные результаты</p>
+        <p>Лотерейные игры природы</p>
+      </div>
+
+      <div class="post">
+        <p>
+          <i>
+            Ein Spieler, der ein Entscheidungsproblem mit einer Nutzenfunktion
+            \( v(\cdot) \) über Handlungen hat, ist rational, wenn er eine
+            Handlung \( a \in A \) wählt, die seinen Nutzen maximiert. Das
+            heißt, \( a^* \in A \) wird gewählt, wenn und nur wenn \( v(a^*)
+            \geq v(a) \) für alle \( a \in A \).</i
+          >
+        </p>
+        <p>
+          Wir haben nun eine formale Definition von Homo economicus: ein
+          Spieler, der rationale Präferenzen hat und rational ist, indem er alle
+          Aspekte seines Entscheidungsproblems versteht und immer eine Option
+          wählt, die ihm den höchsten Nutzen aus der Menge der möglichen
+          Handlungen verschafft.
+        </p>
+        <p>
+          Betrachten wir ein Beispiel mit einem kontinuierlichen Handlungsraum,
+          das einige Kalkulationen erfordert. Stellen Sie sich vor, Sie sind auf
+          einer Party und überlegen, ob Sie sozial trinken wollen. Angesichts
+          Ihrer Konstitution würden Sie etwas Wein bevorzugen, sowohl wegen des
+          Geschmacks als auch wegen des entspannten Gefühls, das er Ihnen gibt,
+          aber zu viel wird Sie krank machen. Es gibt eine Flasche Wein mit
+          einem Liter Inhalt, sodass Ihr Handlungsspielraum \( A = [0,1] \) ist,
+          wobei \( a \in A \) angibt, wie viel Sie trinken möchten. Ihre
+          Präferenzen werden durch die folgende Nutzenfunktion über Handlungen
+          dargestellt: \( v(a) = 2a - 4a^2 \). Wie Sie sehen können, ist etwas
+          Wein besser als gar kein Wein (0,1 Liter bringt Ihnen einen positiven
+          Nutzen, während das Nichttrinken null ergibt), aber ein ganzer Flasche
+          zu trinken ist schlechter als gar nicht zu trinken (\( v(1) = -2 \)).
+          Wie viel sollten Sie trinken? Ihr Maximierungsproblem lautet
+        </p>
+        <p>\[ \max_{a \in [0,1]} \left( 2a - 4a^2 \right) \]</p>
+        <p>
+          Die Ableitung dieser Funktion wird genommen und auf Null gesetzt, um
+          die Lösung zu finden, wobei wir erhalten, dass \( 2 - 8a = 0 \), oder
+          \( a = 0,25 \), was etwas mehr als zwei normale Gläser Wein
+          entspricht.
+        </p>
+        <img src="./imgs/dumb-and-dumber-jim-carrey.gif" />
+      </div>
+
+      <div class="post">
+        <p>
+          Die Annahmen der rationalen Wahl besagen, dass der Spieler ein
+          vollständiges Verständnis des Entscheidungsproblems hat. Dies umfasst
+          das Wissen über alle möglichen Handlungen (A) und alle möglichen
+          Ergebnisse (X) sowie ein klares Verständnis davon, wie jede Handlung
+          das Eintreten eines bestimmten Ergebnisses beeinflusst. Darüber hinaus
+          ist sich der Spieler seiner rationalen Präferenzen oder Auszahlungen
+          im Zusammenhang mit jedem möglichen Ergebnis bewusst. Zusammen
+          ermöglichen diese Faktoren dem Spieler, vollständig informierte und
+          rationale Entscheidungen zu treffen.
+        </p>
+      </div>
+
+      <div class="post">
+        <p>
+          <i>
+            Wenn die Menge der Ergebnisse \( X \) endlich ist, dann kann jede
+            rationale Präferenzrelation über \( X \) durch eine
+            Auszahlungfunktion dargestellt werden.
+          </i>
+        </p>
+        <p>
+          <b><i>Beweis</i></b>
+          &nbsp;&nbsp;&nbsp;&nbsp;Der Beweis erfolgt durch Konstruktion. Da die
+          Präferenzrelation vollständig und transitiv ist, können wir ein
+          mindestens bevorzugtes Ergebnis \( \underline{x} \in X \) finden,
+          sodass alle anderen Ergebnisse \( y \in X \) mindestens so gut wie \(
+          \underline{x} \) sind, das heißt, \( y \gtrsim \underline{x} \) für
+          alle anderen \( y \in X \). Nun definieren wir die
+          "Schlechtestes-Ergebnis-Äquivalenzmenge", bezeichnet mit \( X_1 \),
+          die \( \underline{x} \) und jedes andere Ergebnis umfasst, für das der
+          Spieler indifferent ist zwischen diesem und \( \underline{x} \). Dann,
+          aus den verbleibenden Elementen von \( X \setminus X_1 \), definieren
+          wir die "Zweit-schlechtestes-Ergebnis-Äquivalenzmenge", \( X_2 \), und
+          fahren in dieser Weise fort, bis die
+          "Bestes-Ergebnis-Äquivalenzmenge", \( X_n \), erstellt ist. Da \( X \)
+          endlich ist und \( \gtrsim \) rational, existiert eine solche endliche
+          Sammlung von \( n \) Äquivalenzmengen. Nun betrachten wir \( n \)
+          beliebige Werte \( u_n > u_{n-1} > \dots > u_2 > u_1 \) und ordnen
+          Auszahlungen gemäß der Funktion zu, die definiert ist durch: für jedes
+          \( x \in X_k \), \( u(x) = u_k \). Diese Auszahlungfunktion stellt \(
+          \gtrsim \) dar. Daher haben wir bewiesen, dass eine solche Funktion
+          existiert.&nbsp;&nbsp;&nbsp;&nbsp;\( \blacksquare \)
+        </p>
+      </div>
+      <div class="post">
+        <p>
+          Eine Auszahlungfunktion \( u : X \to \mathbb{R} \) repräsentiert die
+          Präferenzrelation \( \gtrsim \), wenn für jedes Paar \( x, y \in X \),
+          \( u(x) \geq u(y) \) genau dann gilt, wenn \( x \gtrsim y \). Die
+          Auszahlungfunktion ist ein ordinales Konstrukt, das verwendet wird, um
+          Alternativen von den am meisten bis zu den am wenigsten
+          wünschenswerten zu ordnen.
+        </p>
+      </div>
+
+      <div class="post">
+        <p>
+          Wie der Marquis de Condorcet 1785 feststellte, ist es möglich, dass
+          eine Gruppe rationaler individueller Spieler, die gemeinsam
+          Entscheidungen treffen, zu einer „irrationalen“ Gruppe wird. Stellen
+          wir uns zum Beispiel drei Mitbewohner vor, genannt Spieler 1, 2 und 3,
+          die eine Packung Müsli für ihre gemeinsame Küche auswählen müssen.
+        </p>
+        <p>
+          Die Präferenzen von Spieler 1 sind gegeben durch \( a \succ_1 c
+          \succ_1 b \), die von Spieler 2 durch \( c \succ_2 b \succ_2 a \) und
+          die von Spieler 3 durch \( b \succ_3 a \succ_3 c \). Angenommen,
+          unsere drei Spieler treffen ihre Entscheidungen auf demokratische
+          Weise und verwenden Mehrheitsabstimmungen, um zu einer Entscheidung zu
+          gelangen.
+        </p>
+        <p>
+          Was werden die resultierenden Präferenzen der Gruppe \( \succ_G \)
+          sein? Wenn sie sich zwischen \( a \) und \( c \) entscheiden müssen,
+          stimmen Spieler 1 und 3 für \( a \), also gilt \( a \succ_G c \). Wenn
+          sie zwischen \( c \) und \( b \) entscheiden müssen, stimmen Spieler 1
+          und 2 für \( c \), also gilt \( c \succ_G b \). Bei der Wahl zwischen
+          \( a \) und \( b \) stimmen Spieler 2 und 3 für \( b \), also gilt \(
+          b \succ_G a \).
+        </p>
+        <p>
+          Daraus ergibt sich, dass unsere drei rationalen Spieler keine
+          eindeutige Entscheidung auf Basis der Gruppenpräferenzen, die sich aus
+          der Mehrheitswahl ergeben, treffen können! Diese Art von
+          Gruppenunentschlossenheit infolge der Mehrheitswahl wird oft als
+          <b>Condorcet-Paradoxon</b> bezeichnet.
+        </p>
+        <p>
+          Da wir uns nicht mit der Analyse von Gruppenentscheidungen
+          beschäftigen, werden wir dieses Problem nicht direkt behandeln.
+          Dennoch ist es hilfreich, sich solcher Phänomene bewusst zu sein, bei
+          denen die Durchsetzung individueller Rationalität nicht unbedingt
+          „Gruppenrationalität“ impliziert.
+        </p>
+        <img src="/imgs/Condorcet-Paradoxon.png" />
+      </div>
+
+      <div class="post">
+        <p>
+          Die Präferenzrelation \( \gtrsim \) ist <b>vollständig</b>: Für zwei
+          beliebige Ergebnisse \( x, y \in X \) kann eine Rangordnung durch die
+          Präferenzrelation erstellt werden, sodass entweder \( x \gtrsim y \)
+          oder \( y \gtrsim x \) gilt.
+        </p>
+        <p>
+          Die Präferenzrelation \( \gtrsim \) ist <b>transitiv</b>: Für drei
+          beliebige Ergebnisse \( x, y, z \in X \) gilt, dass wenn \( x \gtrsim
+          y \) und \( y \gtrsim z \), dann auch \( x \gtrsim z \) gilt.
+        </p>
+        <p>
+          Eine Präferenzrelation, die vollständig und transitiv ist, wird als
+          <b>rationale Präferenzrelation</b> bezeichnet.
+        </p>
+      </div>
+
+      <div class="post">
+        <p>
+          Ein Entscheidungsproblem besteht aus drei Merkmalen: Aktionen sind
+          alle Alternativen, aus denen der Spieler wählen kann, Ergebnisse sind
+          die möglichen Konsequenzen jeder Aktion, und Präferenzen beschreiben,
+          wie der Spieler die möglichen Ergebnisse vom begehrtesten bis zum am
+          wenigsten begehrten ordnet. Die Präferenzrelation \(\gtrsim\) gibt die
+          Präferenzen des Spielers an, wobei die Notation \(x \gtrsim y\)
+          bedeutet, dass \(x\) mindestens so gut ist wie \(y\).
+        </p>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./scripts/snowfall.js"></script>
+  </body>
+</html>

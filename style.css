@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Latin+Modern+Math&display=swap");
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  background-color: #111111;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: -webkit-fill-available;
+  max-width: 800px;
+  padding: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.bio {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 30px auto;
+  gap: 11px;
+  width: fit-content;
+  color: white;
+}
+
+.bio .bio-text {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
+}
+
+.bio img {
+  width: 100px;
+  border-radius: 999px;
+  border: 2px solid #000000;
+  cursor: pointer;
+}
+
+.bio h1 {
+  margin: 0;
+  font-size: 27px;
+  font-weight: normal;
+}
+
+.bio h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.bio h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.bio h3 a {
+  text-decoration: none;
+  color: white;
+}
+
+.post {
+  margin-bottom: 40px;
+  background-color: #3c3c3c;
+  color: #efefef;
+  border-radius: 11px;
+  padding: 20px 30px;
+  text-align: justify;
+  hyphens: auto;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+.post h2 {
+  font-size: 24px;
+}
+
+.post p {
+  font-size: 1rem;
+  line-height: 1.6;
+  display: block;
+  margin-block-start: 0.8em;
+  margin-block-end: 0.8em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+.post img {
+  max-width: -webkit-fill-available;
+  border-radius: 10px;
+  align-self: center;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    padding: 0 10px;
+    padding-bottom: 10px;
+  }
+
+  .post {
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 83%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+    padding-bottom: 10px;
+  }
+
+  .post {
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 83%;
+  }
+
+  .bio h1 {
+    font-size: 25px;
+  }
+
+  .bio h2 {
+    font-size: 15px;
+  }
+
+  .bio img {
+    width: 73px;
+  }
+
+  .initial-snow > * {
+    font-size: 20px;
+  }
+}
