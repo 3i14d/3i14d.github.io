@@ -36,6 +36,31 @@
 
       <div class="post">
         <p>
+          Nachdem <code>start_kernel</code> die grundlegende Einrichtung
+          abgeschlossen hat, ruft es <code>rest_init</code> auf, um die
+          verbleibende Initialisierung zu übernehmen. Diese Funktion erstellt
+          den ersten Kernel-Thread (<code>init</code>) und den
+          Kernel-Thread-Daemon (<code>kthreadd</code>).
+        </p>
+        <script src="https://gist.github.com/3i14d/142c95ca41dc1daa624bc6cf70c5f5dc.js"></script>
+        <p>
+          <code>kernel_init</code>: Dies ist die Hauptfunktion des ersten
+          Kernel-Threads, der von <code>rest_init</code> erstellt wurde. Sie
+          schließt die Einrichtung verschiedener Kernel-Subsysteme ab und
+          bereitet das System darauf vor, Benutzerprozesse zu starten.
+        </p>
+        <script src="https://gist.github.com/3i14d/639cdc514d7d3a4493bcdd17671f9e77.js"></script>
+        <p>
+          <code>kernel_init_freeable</code>: Diese Funktion wird innerhalb von
+          <code>kernel_init</code> aufgerufen und übernimmt Aufgaben, die
+          ausgeführt werden können, nachdem der Speicherallokator des Kernels
+          vollständig einsatzbereit ist.
+        </p>
+        <script src="https://gist.github.com/3i14d/556183c0b980b9b7386099de94ec468d.js"></script>
+      </div>
+
+      <div class="post">
+        <p>
           Sei \(u(x)\) die Auszahlungsfunktion des Spielers über die Ergebnisse
           in \(X = \{x_1, x_2, \ldots, x_n\}\), und sei \(p = (p_1, p_2, \ldots,
           p_n)\) eine Lotterie über \(X\), sodass \(p_k = \Pr\{x = x_k\}\) gilt.

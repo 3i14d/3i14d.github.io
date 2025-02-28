@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Latin+Modern+Math&display=swap");
+@import url("https://cdn.rawgit.com/lonekorean/gist-syntax-themes/b737b139/stylesheets/terminal.css");
 
 html,
 body {
@@ -13,6 +14,14 @@ body {
   padding: 0;
   display: flex;
   justify-content: center;
+}
+
+code {
+  background-color: #333;
+  color: #f8f8f2;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: "Courier New", monospace;
 }
 
 .container {
@@ -103,13 +112,16 @@ body {
 
 .post img {
   max-width: -webkit-fill-available;
-  border-radius: 10px;
   align-self: center;
 }
 
 .katex-display {
   overflow-x: auto;
   padding-bottom: 0.4em;
+}
+
+.gist-meta {
+  display: none !important;
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
