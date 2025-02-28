@@ -47,6 +47,7 @@ body {
   border-radius: 999px;
   border: 2px solid #000000;
   cursor: pointer;
+  filter: grayscale(1);
 }
 
 .bio h1 {
