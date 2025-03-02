@@ -1,4 +1,4 @@
-let nieve_cantidad = 20;
+let nieve_cantidad = 10;
 let nieve_colorr = ["#aaaacc", "#ddddFF", "#ccccDD"];
 let nieve_tipo = ["Arial Black", "Arial Narrow", "Times", "Comic Sans MS"];
 let nieve_letra = "❅";
