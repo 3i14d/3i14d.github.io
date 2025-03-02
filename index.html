@@ -6,15 +6,21 @@
     <title>3i14d</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css"
+      integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib"
+      crossorigin="anonymous"
     />
     <script
       defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.js"
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js"
+      integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh"
+      crossorigin="anonymous"
     ></script>
     <script
       defer
-      src="https://cd njs.cloudflare.com/ajax/libs/KaTeX/0.16.8/contrib/auto-render.min.js"
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js"
+      integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh"
+      crossorigin="anonymous"
       onload="renderMathInElement(document.body);"
     ></script>
     <link rel="stylesheet" href="style.css" />
@@ -35,6 +41,128 @@
             <a href="mailto:milad@scraperwiz.com">milad@scraperwiz.com</a>
           </h3>
         </div>
+      </div>
+
+      <div class="post">
+        <p>
+          In einem speziellen Fall kann es sein, dass die Amplitude sinusoidal
+          in Raum und Zeit variiert wie \( e^{i(\omega t - \mathbf{k} \cdot
+          \mathbf{r})} \), wobei \(\mathbf{r}\) der Vektorposition von einem
+          Ursprung ist. Eine solche Amplitude variiert entsprechend einer
+          bestimmten Frequenz \(\omega\) und Wellenzahl \(\mathbf{k}\). Es
+          stellt sich dann heraus, dass dies einer klassischen Grenzsituation
+          entspricht, in der wir geglaubt hätten, dass wir es mit einem Teilchen
+          zu tun haben, dessen Energie \(E\) bekannt ist und mit der Frequenz
+          durch \( E = \hbar \omega \) verbunden ist, und dessen Impuls \(
+          \mathbf{p} \) ebenfalls bekannt ist und mit der Wellenzahl durch \(
+          \mathbf{p} = \hbar \mathbf{k} \) verbunden ist.
+        </p>
+        <p>
+          Das bedeutet, dass die Vorstellung eines Teilchens begrenzt ist. Die
+          Vorstellung eines Teilchens—seiner Position, seines Impulses usw.—die
+          wir so oft verwenden, ist in mancher Hinsicht unbefriedigend. Zum
+          Beispiel, wenn eine Amplitude, um ein Teilchen an verschiedenen Orten
+          zu finden, durch \( e^{i(\omega t - \mathbf{k} \cdot \mathbf{r})} \)
+          gegeben ist, deren Absolutwertquadrate konstant sind, würde das
+          bedeuten, dass die Wahrscheinlichkeit, ein Teilchen zu finden, an
+          allen Punkten gleich ist. Das bedeutet, wir wissen nicht, wo es sich
+          befindet—es könnte überall sein—es gibt eine große Unsicherheit in
+          seiner Position.
+        </p>
+        <p>
+          Andererseits, wenn die Position eines Teilchens mehr oder weniger
+          genau bekannt ist und wir sie ziemlich genau vorhersagen können, dann
+          muss die Wahrscheinlichkeit, es an verschiedenen Orten zu finden, auf
+          eine bestimmte Region beschränkt sein, deren Länge wir \(\Delta x\)
+          nennen. Außerhalb dieser Region ist die Wahrscheinlichkeit null. Jetzt
+          ist diese Wahrscheinlichkeit das Absolutquadrat einer Amplitude, und
+          wenn das Absolutquadrat null ist, ist die Amplitude ebenfalls null,
+          sodass wir eine Wellenzug haben, dessen Länge \(\Delta x\) ist, und
+          die Wellenlänge dieses Wellenzugs entspricht dem Impuls des Teilchens.
+        </p>
+        <p>
+          Hier stoßen wir auf etwas Merkwürdiges über Wellen; etwas sehr
+          Einfaches, das nichts mit Quantenmechanik im strengen Sinne zu tun
+          hat. Es ist etwas, das jeder weiß, der mit Wellen arbeitet, selbst
+          wenn er keine Quantenmechanik kennt: nämlich, dass wir keine
+          eindeutige Wellenlänge für einen kurzen Wellenzug definieren können.
+          Ein solcher Wellenzug hat keine bestimmte Wellenlänge; es gibt eine
+          Unbestimmtheit in der Wellenzahl, die mit der endlichen Länge des
+          Zuges verbunden ist, und daher gibt es eine Unbestimmtheit im Impuls.
+        </p>
+      </div>
+
+      <div class="post">
+        <p>
+          Wenn du eine Messung an einem Objekt vornimmst und die
+          \(x\)-Komponente seines Impulses mit einer Unsicherheit \(\Delta p\)
+          bestimmen kannst, kannst du gleichzeitig seine \(x\)-Position nicht
+          genauer kennen als \(\Delta x \ge {\hbar}/{2\Delta p}\), wobei
+          \(\hbar\) eine feste Zahl ist, die von der Natur vorgegeben wird. Sie
+          wird als „reduzierte Plancksche Konstante“ bezeichnet und ist ungefähr
+          \(1.05 \times 10^{-34}\) Joule-Sekunden.
+        </p>
+        <p>
+          Die Unsicherheiten in der Position und im Impuls eines Teilchens zu
+          jedem Zeitpunkt müssen ihr Produkt größer als die halbe reduzierte
+          Plancksche Konstante haben: \(\Delta x \cdot \Delta p \ge
+          {\hbar}/{2}\).
+        </p>
+        <p>
+          Dies ist ein Sonderfall des oben allgemein formulierten
+          Unschärfeprinzips. Die allgemeinere Aussage war, dass man keine
+          Ausrüstung entwerfen kann, die in irgendeiner Weise bestimmt, welche
+          von zwei Alternativen gewählt wird, ohne gleichzeitig das
+          Interferenzmuster zu zerstören.
+        </p>
+      </div>
+
+      <div class="post">
+        <p>
+          I. Die Wahrscheinlichkeit eines Ereignisses in einem idealen
+          Experiment wird durch das Quadrat des Absolutbetrags einer komplexen
+          Zahl \(\phi\) gegeben, die als Wahrscheinlichkeitsamplitude bezeichnet
+          wird: \(P = \text{Wahrscheinlichkeit}\), \(\phi =
+          \text{Wahrscheinlichkeitsamplitude}\), \(P = |\phi|^2\).
+        </p>
+        <p>
+          II. Wenn ein Ereignis auf mehrere alternative Weisen eintreten kann,
+          ist die Wahrscheinlichkeitsamplitude für das Ereignis die Summe der
+          Wahrscheinlichkeitsamplituden für jede einzelne Möglichkeit. Es gibt
+          Interferenz: \(\phi = \phi_1 + \phi_2\), \(P = |\phi_1 + \phi_2|^2\).
+        </p>
+        <p>
+          III. Wenn ein Experiment durchgeführt wird, das feststellen kann,
+          welcher der beiden Alternativwege tatsächlich genommen wird, ist die
+          Wahrscheinlichkeit des Ereignisses die Summe der Wahrscheinlichkeiten
+          jeder Alternative. Die Interferenz geht verloren: \(P = P_1 + P_2\).
+        </p>
+      </div>
+
+      <div class="post">
+        <p>
+          Die Elektronen kommen in Bündeln an, wie Teilchen, und die
+          Wahrscheinlichkeit des Eintreffens dieser Bündel ist verteilt wie die
+          Intensitätsverteilung einer Welle. In diesem Sinne verhält sich ein
+          Elektron „manchmal wie ein Teilchen und manchmal wie eine Welle“.
+        </p>
+        <p>
+          In der Quantenmechanik stellt sich heraus, dass die Amplituden durch
+          komplexe Zahlen dargestellt werden müssen. Die reellen Teile allein
+          reichen nicht aus. Das ist zunächst ein technisches Detail, denn die
+          Formeln sehen dennoch gleich aus.
+        </p>
+        <p>
+          Heisenberg schlug vor, dass die damals neuen Naturgesetze nur dann
+          konsistent sein könnten, wenn es eine grundlegende Beschränkung
+          unserer experimentellen Möglichkeiten gäbe, die zuvor nicht erkannt
+          worden war. Er formulierte als allgemeines Prinzip seine
+          <i>Unschärferelation</i>, die wir in Bezug auf unser Experiment wie
+          folgt ausdrücken können: „Es ist unmöglich, ein Gerät zu konstruieren,
+          das bestimmt, durch welches Loch das Elektron geht, ohne dabei
+          gleichzeitig die Elektronen so stark zu stören, dass das
+          Interferenzmuster zerstört wird.“
+        </p>
       </div>
 
       <div class="post">
