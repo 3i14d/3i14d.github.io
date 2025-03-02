@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap");
 @import url("https://cdn.rawgit.com/lonekorean/gist-syntax-themes/b737b139/stylesheets/terminal.css");
 
 html,
@@ -8,11 +9,13 @@ body {
 
 body {
   background-color: #111111;
-  font-family: "Ubuntu", sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
+  font-family: "Domine", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 code {
@@ -40,6 +43,7 @@ code {
   gap: 11px;
   width: fit-content;
   color: white;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .bio .bio-text {
