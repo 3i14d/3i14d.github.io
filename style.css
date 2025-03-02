@@ -1,10 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Ledger&display=swap");
 @import url("https://cdn.rawgit.com/lonekorean/gist-syntax-themes/b737b139/stylesheets/terminal.css");
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
   overflow-x: hidden;
   width: 100%;
+  overflow-y: hidden;
 }
 
 body {
@@ -149,7 +156,7 @@ code {
   .post {
     padding: 10px 20px;
     border-radius: 5px;
-    width: 83%;
+    width: 100%;
   }
 
   .bio {
