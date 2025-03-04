@@ -41,6 +41,15 @@ code {
   align-items: center;
 }
 
+ul {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+li {
+  list-style-position: inside;
+}
+
 .bio {
   display: flex;
   flex-flow: row nowrap;
