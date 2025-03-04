@@ -43,6 +43,21 @@
         </div>
       </div>
 
+      <div class="post"><p>Was passiert hier:</p>
+<ul><li>
+<code>tl.program_id(axis=0)</code> gibt eine eindeutige ID für jeden parallelen Block aus.
+</li><li>
+<code>tl.load / tl.store</code> sind Tritons speicheroptimierte Operationen für den effizienten GPU-Zugriff.
+</li><li>
+Der blockweise Skalierungsfaktor (<code>s</code>) wird als Maximum des absoluten Werts durch 448 geteilt.
+</li><li>
+Der Eingabetensor wird durch den Skalierungsfaktor geteilt und in FP8 konvertiert.
+</li><li>
+Sowohl das quantisierte Ergebnis (<code>y_ptr</code>) als auch der Skalierungsfaktor (<code>s_ptr</code>) werden gespeichert.
+</li></ul>
+      </div>
+
+      
       <div class="post"><p>Triton, entwickelt von OpenAI, ist eine Sprache zum Schreiben benutzerdefinierter GPU-Kernel mit einer Python-ähnlichen Syntax, die eine Leistung nahe an handoptimiertem CUDA erreicht. Triton abstrahiert viele der Komplexitäten von CUDA, wie z.B. das Management von Thread-Blöcken, und bietet dennoch leistungsstarke Funktionen wie speichereffiziente Zugriffe, Broadcasting und Autotuning.
       </p><p>
 Das Besondere hier ist die Entwicklung schneller, paralleler Kernel direkt in Python, ohne auf Performance verzichten zu müssen.
