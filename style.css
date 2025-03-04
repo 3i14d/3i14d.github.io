@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ledger&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
 @import url("https://cdn.rawgit.com/lonekorean/gist-syntax-themes/b737b139/stylesheets/terminal.css");
 
 * {
@@ -111,6 +113,17 @@ li {
   display: flex;
   flex-flow: column;
   width: 100%;
+}
+
+.post .timestamp {
+  width: 100%;
+  text-align: right;
+  opacity: 0.2;
+  margin-top: 20px;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.6rem;
 }
 
 .post h2 {
