@@ -43,7 +43,9 @@
         </div>
       </div>
 
-      <div class="post"><p>Was passiert hier:</p>
+      <div class="post"><p><code>act_quant_kernel</code>, einem GPU-Kernel, der mit Triton für die blockweise Quantisierung geschrieben wurde:</p>
+     <script src="https://gist.github.com/3i14d/a932f43698255abd9d64745131600837.js"></script>
+        <p>Was passiert hier:</p>
 <ul><li>
 <code>tl.program_id(axis=0)</code> gibt eine eindeutige ID für jeden parallelen Block aus.
 </li><li>
