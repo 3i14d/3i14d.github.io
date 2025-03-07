@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Ledger&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-
 @import url("https://cdn.rawgit.com/lonekorean/gist-syntax-themes/b737b139/stylesheets/terminal.css");
 
 * {
@@ -16,31 +13,34 @@ body {
 }
 
 body {
-  background-color: #111111;
+  background-color: #fff;
+  color: #000;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
-  font-family: "Ledger", serif;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
   font-weight: 400;
   font-style: normal;
+  flex-flow: column nowrap;
 }
 
 code {
-  background-color: #333;
-  color: #f8f8f2;
-  padding: 2px 4px;
-  border-radius: 4px;
+  background-color: #e5e5e5;
+  color: initial;
+  padding: 0;
   font-family: "Courier New", monospace;
+  font-size: 0.9rem;
 }
 
 .container {
   width: -webkit-fill-available;
-  max-width: 800px;
   padding: 20px;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  /* flex-flow: column nowrap;
+  align-items: flex-start; */
 }
 
 ul {
@@ -56,11 +56,10 @@ li {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  margin: 30px auto;
+  margin: 0;
   gap: 11px;
   width: fit-content;
-  color: white;
-  font-family: "Ubuntu", sans-serif;
+  padding: 20px 20px 0 20px;
 }
 
 .bio .bio-text {
@@ -71,12 +70,15 @@ li {
   gap: 5px;
 }
 
-.bio img {
+.bio img.pfp {
   width: 150px;
   border-radius: 999px;
-  border: 2px solid #000000;
   cursor: pointer;
-  filter: grayscale(1);
+  /* filter: grayscale(1); */
+}
+
+.bio a {
+  color: #000;
 }
 
 .bio h1 {
@@ -97,17 +99,13 @@ li {
   font-weight: normal;
 }
 
-.bio h3 a {
-  text-decoration: none;
-  color: white;
+.column {
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .post {
-  margin-bottom: 40px;
-  background-color: #1f2328;
-  color: #efefef;
-  border-radius: 11px;
-  padding: 20px 30px;
+  padding: 10px;
   text-align: justify;
   hyphens: auto;
   display: flex;
@@ -118,12 +116,13 @@ li {
 .post .timestamp {
   width: 100%;
   text-align: right;
-  opacity: 0.2;
+  opacity: 0.7;
   margin-top: 20px;
-  font-family: "Press Start 2P", system-ui;
+  font-family: system-ui;
   font-weight: 400;
   font-style: normal;
-  font-size: 0.6rem;
+  font-size: 0.9rem;
+  background-color: #00000050;
 }
 
 .post h2 {
@@ -134,8 +133,6 @@ li {
   font-size: 1rem;
   line-height: 1.6;
   display: block;
-  margin-block-start: 0.8em;
-  margin-block-end: 0.8em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   unicode-bidi: isolate;
@@ -144,6 +141,7 @@ li {
 .post img {
   max-width: -webkit-fill-available;
   align-self: center;
+  margin: 10px 0;
 }
 
 .katex-display {
@@ -155,7 +153,36 @@ li {
   display: none !important;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+.bio .brightness-btn {
+  cursor: pointer;
+  font-size: 1.3rem;
+  filter: grayscale(1);
+}
+
+/* DARK MODE */
+body.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+code.dark-mode {
+  background-color: #272727;
+  color: #fff;
+}
+
+.bio a.dark-mode {
+  color: #fff;
+}
+
+.post .timestamp.dark-mode {
+  background-color: #ffffff50;
+}
+
+.bio img.pfp.dark-mode {
+  filter: invert(1);
+}
+
+/* @media screen and (min-width: 769px) and (max-width: 1024px) {
   .container {
     padding: 0 10px;
     padding-bottom: 10px;
@@ -166,12 +193,12 @@ li {
     border-radius: 5px;
     width: 83%;
   }
-}
+} */
 
 @media screen and (max-width: 768px) {
   .container {
-    padding: 0 10px;
-    padding-bottom: 10px;
+    grid-template-columns: 100%;
+    padding: 0;
   }
 
   .post {
@@ -182,6 +209,7 @@ li {
 
   .bio {
     flex-flow: column nowrap;
+    width: 100%;
   }
 
   .bio h1 {
@@ -197,8 +225,17 @@ li {
     margin: auto;
   }
 
-  .bio img {
-    width: 150px;
+  .bio .brightness-btn {
+    align-self: center;
+  }
+
+  .column:nth-child(2),
+  .column:nth-child(3) {
+    display: none;
+  }
+
+  .initial-snow > * {
+    font-size: 20px;
   }
 
   .initial-snow > * {
