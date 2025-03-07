@@ -34,6 +34,10 @@ code {
   font-size: 0.9rem;
 }
 
+iframe {
+  margin-bottom: 10px;
+}
+
 .container {
   width: -webkit-fill-available;
   padding: 20px;
