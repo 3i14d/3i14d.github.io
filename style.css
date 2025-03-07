@@ -26,6 +26,11 @@ body {
   flex-flow: column nowrap;
 }
 
+a {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
 code {
   background-color: #e5e5e5;
   color: initial;
