@@ -1,6 +1,9 @@
 import { posts } from "./csts.js"
 
 const isMobView = window.matchMedia("(max-width: 768px)").matches
+const isTabView = window.matchMedia(
+  "(min-width: 769px) and (max-width: 1024px)"
+).matches
 
 /* DARK MODE */
 const brightnessBtn = document.querySelector("#brightness-btn")
@@ -38,6 +41,7 @@ function setPosts() {
     postDiv.classList.add("post")
     postDiv.innerHTML = post
     if (isMobView) columns[0].append(postDiv)
+    else if (isTabView) columns[i % 2].append(postDiv)
     else columns[i % 3].append(postDiv)
     i++
   }

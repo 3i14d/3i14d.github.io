@@ -186,18 +186,11 @@ code.dark-mode {
   filter: invert(1);
 }
 
-/* @media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .container {
-    padding: 0 10px;
-    padding-bottom: 10px;
+    grid-template-columns: 50% 50%;
   }
-
-  .post {
-    padding: 10px 20px;
-    border-radius: 5px;
-    width: 83%;
-  }
-} */
+}
 
 @media screen and (max-width: 768px) {
   .container {
