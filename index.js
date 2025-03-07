@@ -14,10 +14,10 @@ brightnessBtn.addEventListener("click", () => {
     ".bio img.pfp",
   ]
   toggleMode(elIds)
-  if (brightnessBtn.innerHTML.trim() == "🌚") {
-    brightnessBtn.innerHTML = "🌞"
-  } else {
+  if (brightnessBtn.innerHTML.trim() == "🌞") {
     brightnessBtn.innerHTML = "🌚"
+  } else {
+    brightnessBtn.innerHTML = "🌞"
   }
 })
 
