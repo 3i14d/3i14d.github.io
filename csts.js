@@ -10,12 +10,12 @@ Im Gegensatz dazu fühlt sich ein risikofreudiger Spieler von Unsicherheit angez
 </p><p>
 Das Verständnis dieser unterschiedlichen Risikoeinstellungen ist in der Spieltheorie von entscheidender Bedeutung, da es beeinflusst, wie Spieler ihre Strategien bewerten und Entscheidungen treffen. Dieselbe erwartete Auszahlung kann zu völlig unterschiedlichen Entscheidungen führen, je nachdem, ob ein Spieler risikoneutral, risikoavers oder risikofreudig ist — ein wichtiger Unterschied, der über einfache Präferenzrangfolgen hinausgeht und tief in die Psychologie der Entscheidungsfindung unter Unsicherheit eintaucht.
 </p>
+    <div class="timestamp">1741396164</div>
 `,
   String.raw`
   <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0wIT89B1NOxu4RR5bygcqw?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5uBqrp5dDwZePTFbQijpzr?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   <div class="timestamp">1741378989</div>
-    <div class="timestamp">1741396164</div>
   `,
   String.raw`
     <p>
