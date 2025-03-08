@@ -1,5 +1,5 @@
-@import url("https://cdn.rawgit.com/lonekorean/gist-syntax-themes/b737b139/stylesheets/terminal.css");
-
+/*@import url("https://cdn.rawgit.com/lonekorean/gist-syntax-themes/b737b139/stylesheets/terminal.css");
+*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -137,7 +137,7 @@ li {
 }
 
 .post h2 {
-  font-size: 24px;
+  font-size: 17px;
 }
 
 .post p {
