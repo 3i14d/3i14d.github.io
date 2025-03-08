@@ -11,6 +11,7 @@ brightnessBtn.addEventListener("click", () => {
   const elIds = [
     "body",
     "code",
+    "iframe.gist-iframe",
     ".bio a",
     ".post .timestamp",
     ".bio img.brightness-btn",
@@ -66,6 +67,7 @@ function runPostScripts() {
       iframe.style.border = "none"
       iframe.style.width = "100%"
       iframe.style.margin = "15px 0"
+      iframe.classList.add("gist-iframe")
 
       // Auto-adjust height
       iframe.onload = () => {
