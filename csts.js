@@ -2,6 +2,7 @@ export const posts = [
  String.raw`
 <p>Für ein Teilchen, wenn die Gesamtkraft, \(\bold{F}\), null ist, dann ist \(\dot{\bold{p}} = 0\), und der Impuls, \(\bold{p}\), bleibt erhalten.</p><p>Wenn das Gesamtdrehmoment, \(\bold{N}\), null ist, dann ist \(\dot{\bold{L}} = 0\), und der Drehimpuls, \(\bold{L}\), bleibt erhalten.
 </p>
+<div class="timestamp">1741407416</div>
 `,
  String.raw`
  <p>
