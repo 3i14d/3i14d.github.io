@@ -26,6 +26,8 @@ body {
   flex-flow: column nowrap;
 }
 
+p{text-indent:10px;}
+
 a {
   -webkit-tap-highlight-color: transparent;
   outline: none;
