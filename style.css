@@ -26,8 +26,6 @@ body {
   flex-flow: column nowrap;
 }
 
-p{text-indent:10px;}
-
 a {
   -webkit-tap-highlight-color: transparent;
   outline: none;
@@ -137,7 +135,7 @@ li {
 }
 
 .post h2 {
-  font-size: 17px;
+  font-size: 17px;text-indent:10px;
 }
 
 .post p {
@@ -146,7 +144,7 @@ li {
   display: block;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  unicode-bidi: isolate;
+  unicode-bidi: isolate;text-indent:10px;
 }
 
 .post img {
