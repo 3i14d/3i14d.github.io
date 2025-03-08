@@ -89,7 +89,6 @@ Ein Spieler ist risikoneutral, wenn er bereit ist, jede sichere Auszahlung gegen
         für \(0 \le x \le 2a\) und \(f(x | a) = 0\) für alle \(x > 2a\)
         beschrieben.
       </p>
-      <img src="./imgs/veggietales-tomato.gif" />
       <p>
         Wenn Ihr Ertrag von der Menge \(x\) durch \(u(x)\) beschrieben wird,
         ergibt sich Ihr erwarteter Ertrag bei einer Wahl von \(a \in A\) wie
@@ -388,7 +387,6 @@ Ein Spieler ist risikoneutral, wenn er bereit ist, jede sichere Auszahlung gegen
           \( a = 0,25 \), was etwas mehr als zwei normale Gläser Wein
           entspricht.
         </p>
-        <img src="./imgs/dumb-and-dumber-jim-carrey.gif" />
         <div class="timestamp">1739217887</div>`,
   String.raw`<p>
           Die Annahmen der rationalen Wahl besagen, dass der Spieler ein
