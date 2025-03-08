@@ -479,7 +479,7 @@ Ein Spieler ist risikoneutral, wenn er bereit ist, jede sichere Auszahlung gegen
           denen die Durchsetzung individueller Rationalität nicht unbedingt
           „Gruppenrationalität“ impliziert.
         </p>
-        <img src="/imgs/Condorcet-Paradoxon.png" />
+        
         <div class="timestamp">1738803624</div>`,
   String.raw`<p>
           Die Präferenzrelation \( \gtrsim \) ist <b>vollständig</b>: Für zwei
