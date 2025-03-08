@@ -1,7 +1,7 @@
 export const posts = [
 String.raw`<p>
   Wenn wir uns für den erwarteten Ertrag entscheiden, spielt die Intensität der Präferenzen eine Rolle – etwas, das über die Vorstellung einer einfachen Reihenfolge hinausgeht. Im Gegensatz zum Ertrag über bestimmte Ergebnisse, der dazu dient, ordinale Präferenzen darzustellen, beinhaltet die Darstellung des erwarteten Ertrags eine kardinale Rangordnung, bei der Werte genauso wichtig sind wie die Reihenfolge.
-<p></p>
+</p><p>
 Ein Spieler ist risikoneutral, wenn er bereit ist, jede sichere Auszahlung gegen jede Lotterie zu tauschen, die den gleichen erwarteten monetären Ertrag verspricht. Ein Spieler ist risikoscheu, wenn er nicht bereit ist, eine sichere Auszahlung gegen eine (nicht degenerierte) Lotterie zu tauschen, die den gleichen erwarteten monetären Ertrag verspricht. Schließlich ist ein Spieler risikofreudig, wenn das Gegenteil zutrifft: Er bevorzugt strikt jede Lotterie, die den gleichen erwarteten monetären Ertrag verspricht.
 </p>
 
