@@ -1,5 +1,5 @@
 export const posts = [
- SString.raw`
+ String.raw`
  <p>
  <b>Das St. Petersburger Paradoxon</b>
 </p><p>
