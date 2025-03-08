@@ -1,4 +1,23 @@
 export const posts = [
+ SString.raw`
+ <p>
+ <b>Das St. Petersburger Paradoxon</b>
+</p><p>
+Einige führen die erste Diskussion über Risikoaversion auf das St. Petersburger Paradoxon zurück, das seinen Namen in Daniel Bernoullis ursprünglicher Darstellung des Problems und seiner Lösung trägt, die 1738 in den *Kommentaren der Kaiserlichen Akademie der Wissenschaften von Sankt Petersburg* veröffentlicht wurde. Das Entscheidungsproblem lautet wie folgt: Du zahlst eine feste Gebühr, um an einem Glücksspiel teilzunehmen. Eine "faire" Münze (beide Seiten haben die gleiche Wahrscheinlichkeit, nach oben zu landen) wird wiederholt geworfen, bis zum ersten Mal "Zahl" erscheint und das Spiel endet. Der "Pott" startet bei 1 \$ und verdoppelt sich jedes Mal, wenn "Kopf" erscheint. Du gewinnst, was immer im Pott ist, wenn das Spiel endet. Du gewinnst also 1 \$, wenn beim ersten Wurf Zahl erscheint, 2 \$, wenn es beim zweiten Wurf erscheint, 4 \$, wenn es beim dritten Wurf erscheint, und so weiter. Kurz gesagt, du gewinnst 2^{k-1} Dollar, wenn die Münze k Mal geworfen wird, bis die erste Zahl erscheint. (In der ursprünglichen Einführung wurde dieses Spiel in einem hypothetischen Casino in St. Petersburg angesiedelt, daher der Name des Paradoxons.)
+</p><p>
+Die Wahrscheinlichkeit, dass die erste "Zahl" beim k-ten Wurf erscheint, entspricht der Wahrscheinlichkeit, dass "Kopf" k-1 Mal hintereinander erscheint und dann "Zahl" einmal erscheint. Die Wahrscheinlichkeit dieses Ereignisses ist \left( \frac{1}{2} \right)^k, weil bei jedem Wurf die Wahrscheinlichkeit, dass eine der beiden Seiten erscheint, \frac{1}{2} ist.
+</p><p>
+Nun berechnen wir den erwarteten Geldwert dieses Lotteriewettbewerbs, der die Erwartungen über die möglichen Ereignisse wie folgt berücksichtigt: Du gewinnst 1 \$ mit der Wahrscheinlichkeit \frac{1}{2}, 2 \$ mit der Wahrscheinlichkeit \frac{1}{4}, 4 \$ mit der Wahrscheinlichkeit \frac{1}{8} und so weiter. Der erwartete Wert dieser Lotterie ist:
+</p>
+\[
+\sum_{k=1}^{\infty} \frac{1}{2^k} \times 2^{k-1} = \sum_{k=1}^{\infty} \frac{1}{2} = \infty
+\]
+<p>
+Das bedeutet, dass der erwartete Geldwert dieser Lotterie unendlich ist! Der Grund dafür ist, dass obwohl große Summen sehr unwahrscheinlich sind, sie, wenn sie eintreten, riesig sind. Zum Beispiel ist die Wahrscheinlichkeit, dass du mehr als 1 Million \$ gewinnst, weniger als eins zu 500.000!
+</p><p>
+Als Bernoulli dieses Beispiel präsentierte, war es sehr klar, dass keine vernünftige Person mehr als ein paar Dollar zahlen würde, um an dieser Lotterie teilzunehmen. Die Frage ist also: Wo liegt das Paradoxon? Bernoulli schlug einige Antworten vor, eine davon war die abnehmende Grenzauszahlung von Geld oder eine konkave Auszahlungsfunktion über Geld, was im Grunde Risikoaversion bedeutet. Er sagte zu Recht voraus, dass der Wert dieser Lotterie nicht in ihrem erwarteten Geldwert gemessen werden sollte, sondern im Geldwert ihrer erwarteten Auszahlung.
+</p>
+`,
 String.raw`<p>
   Wenn wir uns für den erwarteten Ertrag entscheiden, spielt die Intensität der Präferenzen eine Rolle – etwas, das über die Vorstellung einer einfachen Reihenfolge hinausgeht. Im Gegensatz zum Ertrag über bestimmte Ergebnisse, der dazu dient, ordinale Präferenzen darzustellen, beinhaltet die Darstellung des erwarteten Ertrags eine kardinale Rangordnung, bei der Werte genauso wichtig sind wie die Reihenfolge.
 </p><p>
