@@ -17,6 +17,7 @@ Das bedeutet, dass der erwartete Geldwert dieser Lotterie unendlich ist! Der Gru
 </p><p>
 Als Bernoulli dieses Beispiel präsentierte, war es sehr klar, dass keine vernünftige Person mehr als ein paar Dollar zahlen würde, um an dieser Lotterie teilzunehmen. Die Frage ist also: Wo liegt das Paradoxon? Bernoulli schlug einige Antworten vor, eine davon war die abnehmende Grenzauszahlung von Geld oder eine konkave Auszahlungsfunktion über Geld, was im Grunde Risikoaversion bedeutet. Er sagte zu Recht voraus, dass der Wert dieser Lotterie nicht in ihrem erwarteten Geldwert gemessen werden sollte, sondern im Geldwert ihrer erwarteten Auszahlung.
 </p>
+<div class="timestamp">1741400168</div>
 `,
 String.raw`<p>
   Wenn wir uns für den erwarteten Ertrag entscheiden, spielt die Intensität der Präferenzen eine Rolle – etwas, das über die Vorstellung einer einfachen Reihenfolge hinausgeht. Im Gegensatz zum Ertrag über bestimmte Ergebnisse, der dazu dient, ordinale Präferenzen darzustellen, beinhaltet die Darstellung des erwarteten Ertrags eine kardinale Rangordnung, bei der Werte genauso wichtig sind wie die Reihenfolge.
