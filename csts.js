@@ -2,7 +2,7 @@ export const posts = [
   String.raw`<p>
   Bis zu 90% der Parameter in einem trainierten neuronalen Netzwerk könnten entfernt werden, ohne die Effizienz zu beeinträchtigen.
 </p>
-<a style="font-size:0.8rem" src="https://www.researchgate.net/publication/221618539_Optimal_Brain_Damage">
+<a style="font-size:0.8rem" target="_blank" href="https://www.researchgate.net/publication/221618539_Optimal_Brain_Damage">
 Lecun, Yann & Denker, John & Solla, Sara. (1989). Optimal Brain Damage. Advances in Neural Information Processing Systems. 2. 598-605. 
 </a>
 <div class="timestamp">1741647273</div>
