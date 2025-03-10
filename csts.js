@@ -1,4 +1,12 @@
 export const posts = [
+  String.raw`<p>
+  Bis zu 90% der Parameter in einem trainierten neuronalen Netzwerk könnten entfernt werden, ohne die Effizienz zu beeinträchtigen.
+</p>
+<a style="font-size:0.8rem" src="https://www.researchgate.net/publication/221618539_Optimal_Brain_Damage">
+Lecun, Yann & Denker, John & Solla, Sara. (1989). Optimal Brain Damage. Advances in Neural Information Processing Systems. 2. 598-605. 
+</a>
+<div class="timestamp">1741647273</div>
+`,
   String.raw`
 <p>Für ein Teilchen, wenn die Gesamtkraft, \(\bold{F}\), null ist, dann ist \(\dot{\bold{p}} = 0\), und der Impuls, \(\bold{p}\), bleibt erhalten.</p><p>Wenn das Gesamtdrehmoment, \(\bold{N}\), null ist, dann ist \(\dot{\bold{L}} = 0\), und der Drehimpuls, \(\bold{L}\), bleibt erhalten.
 </p>
