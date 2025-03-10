@@ -1,4 +1,8 @@
 export const posts = [
+String.raw`
+<p>Gleichung \(\Delta y \Delta p_y \geq \hbar/2\) bezieht sich auf die Vorhersagbarkeit einer Situation, nicht auf Bemerkungen über die Vergangenheit. Es bringt nichts zu sagen: „Ich wusste, was der Impuls war, bevor er durch den Spalt ging, und jetzt kenne ich die Position“, denn jetzt ist das Wissen über den Impuls verloren. Die Tatsache, dass es durch den Spalt ging, erlaubt es uns nicht mehr, den vertikalen Impuls vorherzusagen. Wir sprechen über eine Vorhersagetheorie, nicht nur über Messungen im Nachhinein. Daher müssen wir darüber sprechen, was wir vorhersagen können.
+</p>
+<div class="timestamp">1741650577</div>`,
   String.raw`<p>
   Bis zu 90% der Parameter in einem trainierten neuronalen Netzwerk könnten entfernt werden, ohne die Effizienz zu beeinträchtigen.
 </p>
