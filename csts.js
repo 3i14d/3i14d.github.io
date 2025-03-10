@@ -1,15 +1,14 @@
 export const posts = [
- String.raw`
+  String.raw`
 <p>Für ein Teilchen, wenn die Gesamtkraft, \(\bold{F}\), null ist, dann ist \(\dot{\bold{p}} = 0\), und der Impuls, \(\bold{p}\), bleibt erhalten.</p><p>Wenn das Gesamtdrehmoment, \(\bold{N}\), null ist, dann ist \(\dot{\bold{L}} = 0\), und der Drehimpuls, \(\bold{L}\), bleibt erhalten.
 </p>
 <div class="timestamp">1741407416</div>
 `,
- String.raw`
+  String.raw`
  <p>
  <h2>Das St. Petersburger Paradoxon</h2>
 </p><p>
 Einige führen die erste Diskussion über Risikoaversion auf das St. Petersburger Paradoxon zurück, das seinen Namen in Daniel Bernoullis ursprünglicher Darstellung des Problems und seiner Lösung trägt, die 1738 in den <i>Kommentaren der Kaiserlichen Akademie der Wissenschaften von Sankt Petersburg</i> veröffentlicht wurde.</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Russian_Academy_of_Sciences_SPB.jpg/1024px-Russian_Academy_of_Sciences_SPB.jpg"/>
 <p>Das Entscheidungsproblem lautet wie folgt: Du zahlst eine feste Gebühr, um an einem Glücksspiel teilzunehmen. Eine "faire" Münze (beide Seiten haben die gleiche Wahrscheinlichkeit, nach oben zu landen) wird wiederholt geworfen, bis zum ersten Mal "Zahl" erscheint und das Spiel endet. Der "Pott" startet bei $1 und verdoppelt sich jedes Mal, wenn "Kopf" erscheint. Du gewinnst, was immer im Pott ist, wenn das Spiel endet. Du gewinnst also $1, wenn beim ersten Wurf Zahl erscheint, $2, wenn es beim zweiten Wurf erscheint, $4, wenn es beim dritten Wurf erscheint, und so weiter. Kurz gesagt, du gewinnst \(2^{k-1}\) Dollar, wenn die Münze \(k\) Mal geworfen wird, bis die erste Zahl erscheint. (In der ursprünglichen Einführung wurde dieses Spiel in einem hypothetischen Casino in St. Petersburg angesiedelt, daher der Name des Paradoxons.)
 </p><p>
 Die Wahrscheinlichkeit, dass die erste "Zahl" beim \(k\)-ten Wurf erscheint, entspricht der Wahrscheinlichkeit, dass "Kopf" \(k-1\) Mal hintereinander erscheint und dann "Zahl" einmal erscheint. Die Wahrscheinlichkeit dieses Ereignisses ist \(\left( \frac{1}{2} \right)^k\), weil bei jedem Wurf die Wahrscheinlichkeit, dass eine der beiden Seiten erscheint, \(\frac{1}{2}\) ist.
@@ -26,7 +25,7 @@ Als Bernoulli dieses Beispiel präsentierte, war es sehr klar, dass keine vernü
 </p>
 <div class="timestamp">1741400168</div>
 `,
-String.raw`<p>
+  String.raw`<p>
   Wenn wir uns für den erwarteten Ertrag entscheiden, spielt die Intensität der Präferenzen eine Rolle – etwas, das über die Vorstellung einer einfachen Reihenfolge hinausgeht. Im Gegensatz zum Ertrag über bestimmte Ergebnisse, der dazu dient, ordinale Präferenzen darzustellen, beinhaltet die Darstellung des erwarteten Ertrags eine kardinale Rangordnung, bei der Werte genauso wichtig sind wie die Reihenfolge.
 </p><p>
 Ein Spieler ist risikoneutral, wenn er bereit ist, jede sichere Auszahlung gegen jede Lotterie zu tauschen, die den gleichen erwarteten monetären Ertrag verspricht. Ein Spieler ist risikoscheu, wenn er nicht bereit ist, eine sichere Auszahlung gegen eine (nicht degenerierte) Lotterie zu tauschen, die den gleichen erwarteten monetären Ertrag verspricht. Schließlich ist ein Spieler risikofreudig, wenn das Gegenteil zutrifft: Er bevorzugt strikt jede Lotterie, die den gleichen erwarteten monetären Ertrag verspricht.
