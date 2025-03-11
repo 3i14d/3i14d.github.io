@@ -1,4 +1,12 @@
 export const posts = [
+  String.raw`<p>
+  Вероятность обнаружения частицы одинакова во всех точках.
+</p><p>
+Мы не можем определить уникальную длину волны для короткого волнового пакета.
+</p>
+<img src="https://uploads4.wikiart.org/images/salvador-dali/religious-scene-in-particles.jpg!Large.jpg"/>
+<div class="timestamp">1741651177</div>
+`,
 String.raw`
 <p>Gleichung \(\Delta y \Delta p_y \geq \hbar/2\) bezieht sich auf die Vorhersagbarkeit einer Situation, nicht auf Bemerkungen über die Vergangenheit. Es bringt nichts zu sagen: „Ich wusste, was der Impuls war, bevor er durch den Spalt ging, und jetzt kenne ich die Position“, denn jetzt ist das Wissen über den Impuls verloren. Die Tatsache, dass es durch den Spalt ging, erlaubt es uns nicht mehr, den vertikalen Impuls vorherzusagen. Wir sprechen über eine Vorhersagetheorie, nicht nur über Messungen im Nachhinein. Daher müssen wir darüber sprechen, was wir vorhersagen können.
 </p>
