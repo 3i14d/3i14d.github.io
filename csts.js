@@ -1,5 +1,16 @@
 export const posts = [
   String.raw`<p>
+  Ein Spieler, der vor einem Entscheidungsproblem mit einer Auszahlungsfunktion \(u(\cdot)\) über Ergebnisse steht, gilt als rational, wenn er eine Aktion \(a \in A\) wählt, die seinen erwarteten Nutzen maximiert. Mit anderen Worten, eine Aktion \(a^* \in A\) wird genau dann gewählt, wenn  
+</p>
+\[
+v(a^*) = E\big[u(x) \mid a^*\big] \ge E\big[u(x) \mid a\big] = v(a) \quad \text{für alle } a \in A.
+\]
+<p>
+Das bedeutet, dass der Spieler, der die stochastischen Konsequenzen jeder seiner Handlungen versteht, eine Aktion wählt, die ihm den höchsten erwarteten Nutzen bietet.
+</p>
+<div class="timestamp">1741750452</div>
+`,
+  String.raw`<p>
   Вероятность обнаружения частицы одинакова во всех точках.
 </p><p>
 Мы не можем определить уникальную длину волны для короткого волнового пакета.
