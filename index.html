@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
-    <title>QR Code Generator</title>
+    <title>QR Code Gen</title>
     <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
     <style>
       body {
@@ -20,22 +21,37 @@
       .qrcode canvas {
         width: -webkit-fill-available;
       }
+      button {
+        min-height: 50px;
+        min-width: 200px;
+        margin: auto;
+      }
+
+      input[type="color"] {
+        height: 50px;
+      }
+      textarea {
+        font-size: 1.1rem;
+      }
+      @media only screen and (max-width: 768px) {
+        textarea {
+          font-size: 2rem;
+        }
+      }
     </style>
   </head>
   <body>
-    <h1>QR Code Generator</h1>
-    <textarea id="textInput" placeholder="Enter text or URL"></textarea>
+    <h1>QR Code Gen</h1>
+    <textarea id="textInput" rows="10"></textarea>
     <div id="qrInfo" style="margin-top: 10px; font-family: monospace"></div>
     <input type="file" id="imageInput" accept="image/*" />
     <br />
-    <label
-      >Foreground: <input type="color" id="fgColor" value="#000000"
-    /></label>
-    <label
-      >Background: <input type="color" id="bgColor" value="#ffffff"
-    /></label>
+    <div style="display: flex; flex-flow: row nowrap; margin: auto; gap: 20px">
+      <input type="color" id="fgColor" value="#000000" />
+      <input type="color" id="bgColor" value="#ffffff" />
+    </div>
     <br />
-    <button onclick="handleGenerate()">Generate QR</button>
+    <button onclick="handleGenerate()">Generate</button>
     <div id="qrcode" class="qrcode"></div>
 
     <script type="text/javascript" src="./script.js"></script>
