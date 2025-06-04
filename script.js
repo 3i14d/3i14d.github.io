@@ -92,20 +92,37 @@ function generateAutoVersionQR({
       const img = new Image();
       img.src = e.target.result;
       img.onload = () => {
-        // The “QR area” (excluding border) is moduleCount * cellSize,
-        // so we center within the full canvas, and it naturally sits
-        // inside that quiet-zone border.
+        // The “QR area” (excluding quiet‐zone) is moduleCount * cellSize:
         const qrAreaSize = moduleCount * cellSize;
-        const imgSize = qrAreaSize * 0.25; // 25% of QR area
-        // To center the overlay on full canvas:
-        const canvasCenter = size / 2;
-        const x = canvasCenter - imgSize / 2;
-        const y = canvasCenter - imgSize / 2;
-        // Optional small background behind the image:
-        ctx.fillStyle = backgroundColor;
-        ctx.fillRect(x - 5, y - 5, imgSize + 10, imgSize + 10);
-        ctx.drawImage(img, x, y, imgSize, imgSize);
+        // We want the overlay to occupy 25% of QR area:
+        const maxOverlaySize = qrAreaSize * 0.25;
 
+        // Compute scaled dimensions so the image fits in a square of maxOverlaySize×maxOverlaySize
+        const origW = img.width;
+        const origH = img.height;
+        let drawW, drawH;
+        if (origW > origH) {
+          // landscape or square: width = max, height scaled down
+          drawW = maxOverlaySize;
+          drawH = (origH / origW) * maxOverlaySize;
+        } else {
+          // portrait (or equal): height = max, width scaled down
+          drawH = maxOverlaySize;
+          drawW = (origW / origH) * maxOverlaySize;
+        }
+
+        // Center the image on the canvas:
+        const canvasCenter = size / 2;
+        const x = canvasCenter - drawW / 2;
+        const y = canvasCenter - drawH / 2;
+
+        // === REMOVE THE “white background” behind the logo ===
+        // Previously you had:
+        //   ctx.fillStyle = backgroundColor;
+        //   ctx.fillRect(x - 5, y - 5, imgSize + 10, imgSize + 10);
+        // Deleting that ensures transparent parts of the PNG remain transparent.
+
+        ctx.drawImage(img, x, y, drawW, drawH);
         wrapCanvasInDownload(container, canvas);
       };
     };
