@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>QR Code Generator</title>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+    <style>
+      body {
+        font-family: Arial;
+        text-align: center;
+        padding: 2em;
+        display: flex;
+        flex-flow: column nowrap;
+        width: 500px;
+        margin: auto;
+      }
+      .qrcode {
+        margin-top: 1em;
+      }
+      .qrcode canvas {
+        width: -webkit-fill-available;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>QR Code Generator</h1>
+    <textarea id="textInput" placeholder="Enter text or URL">hi</textarea>
+    <div id="qrInfo" style="margin-top: 10px; font-family: monospace"></div>
+    <input type="file" id="imageInput" accept="image/*" />
+    <br />
+    <label
+      >Foreground: <input type="color" id="fgColor" value="#000000"
+    /></label>
+    <label
+      >Background: <input type="color" id="bgColor" value="#ffffff"
+    /></label>
+    <br />
+    <button onclick="handleGenerate()">Generate QR</button>
+    <div id="qrcode" class="qrcode"></div>
+
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
