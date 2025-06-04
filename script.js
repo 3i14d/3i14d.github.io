@@ -125,7 +125,7 @@ function wrapCanvasInDownload(container, canvas) {
   const dataURL = canvas.toDataURL("image/png");
   const link = document.createElement("a");
   link.href = dataURL;
-  link.download = "qr-code.png";
+  link.download = `qr-${Date.now()}.png`;
   link.title = "Click to download";
   link.appendChild(canvas);
 
